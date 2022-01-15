@@ -100,6 +100,24 @@ nav a{
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 10% 0 10%;
+    grid-gap:;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price,.product-name{
+    margin:5px 0px;
 }
 
 .product-details .price{
@@ -112,4 +130,22 @@ nav a{
 
 .fa-star.empty{
     color: rgb(216, 216, 216);
+}
+
+/*-----------------------
+ footer section 
+ ------------------------*/
+
+footer{
+    height: 239px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon i{
+    margin:0px 5px;
 }
