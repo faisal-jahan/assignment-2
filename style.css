@@ -2,23 +2,14 @@
  Making Responsive 
  ------------------------*/
 
-@media only screen and (max-width:688px) {
-    .website-name, .menu{
-        flex-direction: column;
-    }
+ @media only screen and (max-width:688px) {
 
-    .website-name{
-        order: 1;
-    }
-
-    .menu{
-        order: 2;
-    }
 }
 
 
+
 /*-----------------------
- header section 
+body section 
  ------------------------*/
 
 body{
@@ -33,14 +24,21 @@ body{
 nav {
     height: 100px;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns:1fr 1fr;
     padding: 0 60px 0 60px;
 }
 
-.website-name, .menu{
+.website-name{
     display: flex;
-    align-items: center;
+    justify-content: left;
+    align-items:center;
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    align-items:center;
 }
 
 .menu{
@@ -59,14 +57,16 @@ nav a{
 
 .top-banner{
     /* background-color: yellow; */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
     height: 500px;
     padding: 0 100px;
 }
 
 .half-screen{
-    width: 50%;
+
 }
 
 .title-text h1{
@@ -81,13 +81,19 @@ nav a{
     font-weight: 700;
 }
 
-.button{
+.button a{
     display: inline-block;
     text-decoration: none;
-    padding: 5px 12px;
+    padding: 10px 20px;
     background-color: #E02C6D;
     border-radius: 41px;
     color: white;
+    transition: transform 0.5s;
+}
+
+.button a:hover{
+    transform: translate(20px);
+    background-color: #ff327d;
 }
 
 .banner-left{
@@ -107,11 +113,14 @@ nav a{
 .logo-section{
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    padding: 0 10% 0 10%;
     margin:0;
     align-items: center;
     height: 110px;
-    /* background-color: thistle; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
 }
 
 /*-----------------------
@@ -119,13 +128,15 @@ nav a{
  ------------------------*/
 
 .product-section{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .product-section-heading{
     display: flex;
     justify-content: center;
+    text-transform:uppercase;
 }
 
 .product-grid{
@@ -142,7 +153,13 @@ nav a{
     width: 300px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(214, 214, 214);
+    border: 1px solid whitesmoke;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 15px rgb(214, 214, 214);
+    transform: scale(1.05);
 }
 
 .product img{
@@ -174,9 +191,18 @@ nav a{
 
 .see-more{
     display: flex;
-    color: #E02C6D;
     justify-content: flex-end;
-    padding-right: 90px;
+}
+
+.see-more a{
+    display: inline-block;
+    text-decoration:none;
+    color: #E02C6D;
+    transition: transform 0.5s;
+}
+
+.see-more a:hover{
+    transform: translate(20px);
 }
 
 
@@ -185,22 +211,35 @@ nav a{
  ------------------------*/
 
 .interesting{
+    display: grid;
+    justify-items: center;
     margin: 20px 0px;
+
+}
+
+.other-products-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
 }
 
 .other-products-section{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
 }
 
 .other-product{
     width: 150px;
     height: 150px;
-    margin: 20px;
     border: 5px solid rgb(231, 231, 231);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    transition: box-shadow 0.5s, transform 0.5s;
+    transition: box-shadow 0.5s, transform 0.5s, translate 0.5s;
 }
 .other-product img{
     width: 100%;
@@ -213,6 +252,10 @@ nav a{
     transform: scale(1.50) rotate(10deg);
 }
 
+.other-products-title h1{
+    font-size: 30px;
+}
+
 
 /*-----------------------
  footer section 
@@ -220,12 +263,13 @@ nav a{
 
 footer{
     height: 200px;
+    width: 100%;
     text-align: center;
     background-color: black;
     color: white;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 
 .social-icon i{
@@ -236,5 +280,3 @@ footer{
     text-decoration: none;
     color: white;
 }
-
-
