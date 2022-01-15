@@ -1,9 +1,115 @@
-.top-banner{
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*-----------------------
+ header section 
+ ------------------------*/
+
+nav {
+    height: 100px;
+    background-color: white;
     display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 60px;
+}
+
+.website-name, .menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    font-weight: 700;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+/*-----------------------
+ top section 
+ ------------------------*/
+
+.top-banner{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding: 0 100px;
 }
 
 .half-screen{
-    background-color: pink;
-    margin: 1px;
     width: 50%;
+}
+
+.title-text h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-title p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 12px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color: white;
+}
+
+.banner-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-camera{
+    position:absolute;
+}
+
+/*-----------------------
+ logo section 
+ ------------------------*/
+
+.logo-section{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 0 10% 0 10%;
+    margin:0;
+    align-items: center;
+    height: 110px;
+    /* background-color: thistle; */
+}
+
+/*-----------------------
+ product section 
+ ------------------------*/
+
+.product-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-details .price{
+    font-size: 24px;
+}
+
+.fa-star.filled{
+    color: orange;
+}
+
+.fa-star.empty{
+    color: rgb(216, 216, 216);
 }
