@@ -1,3 +1,26 @@
+/*-----------------------
+ Making Responsive 
+ ------------------------*/
+
+@media only screen and (max-width:688px) {
+    .website-name, .menu{
+        flex-direction: column;
+    }
+
+    .website-name{
+        order: 1;
+    }
+
+    .menu{
+        order: 2;
+    }
+}
+
+
+/*-----------------------
+ header section 
+ ------------------------*/
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -35,7 +58,7 @@ nav a{
  ------------------------*/
 
 .top-banner{
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
     height: 500px;
@@ -95,6 +118,11 @@ nav a{
  product section 
  ------------------------*/
 
+.product-section{
+    display: flex;
+    flex-direction: column;
+}
+
 .product-section-heading{
     display: flex;
     justify-content: center;
@@ -144,6 +172,13 @@ nav a{
     color: rgb(216, 216, 216);
 }
 
+.see-more{
+    display: flex;
+    color: #E02C6D;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
 
 /*-----------------------
  interesting section 
@@ -175,7 +210,7 @@ nav a{
 .other-product:hover{
     /* width: 250px; */
     box-shadow: 0px 0px 20px rgb(197, 197, 197);
-    transform: scale(1.25) rotate(10deg);
+    transform: scale(1.50) rotate(10deg);
 }
 
 
