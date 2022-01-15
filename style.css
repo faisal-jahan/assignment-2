@@ -1,0 +1,9 @@
+.top-banner{
+    display: flex;
+}
+
+.half-screen{
+    background-color: pink;
+    margin: 1px;
+    width: 50%;
+}
