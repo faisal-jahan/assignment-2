@@ -2,9 +2,14 @@
  Making Responsive 
  ------------------------*/
 
- @media only screen and (max-width:688px) {
+ @media only screen and (max-width: 600px) {
 
-
+    nav{
+        height: 100px;
+        background-color: white;
+        display: grid;
+        justify-items: center;
+    }
 
 }
 
