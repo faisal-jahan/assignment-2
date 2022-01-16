@@ -1,21 +1,4 @@
 /*-----------------------
- Making Responsive 
- ------------------------*/
-
- @media only screen and (max-width: 600px) {
-
-    nav{
-        height: 100px;
-        background-color: white;
-        display: grid;
-        justify-items: center;
-    }
-
-}
-
-
-
-/*-----------------------
 body section 
  ------------------------*/
 
@@ -70,7 +53,6 @@ nav a{
     /* background-color: yellow; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     align-items: center;
     padding: 0 100px;
 }
@@ -125,7 +107,7 @@ nav a{
     grid-template-columns: repeat(7,1fr);
     margin:0;
     align-items: center;
-    height: 110px;
+    padding: 20px 0;
 }
 
 .logo{
@@ -290,3 +272,78 @@ footer{
     text-decoration: none;
     color: white;
 }
+
+
+/*-----------------------
+ Making Responsive 
+ ------------------------*/
+
+ @media only screen and (max-width: 688px) {
+
+    nav{
+        grid-template-columns:1fr;
+        justify-items: center;
+        margin-bottom: 10px;
+    }
+
+    .top-banner{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .logo-section{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .product-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .other-products-container{
+        grid-template-columns: 1fr;
+    }
+
+    .other-products-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    nav{
+        grid-template-columns:1fr;
+        justify-items: center;
+        margin-bottom: 10px;
+    }
+
+    .top-banner{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .logo-section{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .product-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .other-products-container{
+        grid-template-columns: 1fr;
+    }
+
+    .other-products-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
