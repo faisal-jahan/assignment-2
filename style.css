@@ -88,10 +88,18 @@ nav a{
     background-color: #ff327d;
 }
 
-.banner-left{
+.banner-right{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.banner-right img{
+    width: 100%;
+}
+
+.circle img{
+    width: 100%;
 }
 
 .banner-camera{
@@ -113,6 +121,10 @@ nav a{
 .logo{
     display: flex;
     justify-content: center;
+}
+
+.logo img{
+    width: 50%;
 }
 
 /*-----------------------
